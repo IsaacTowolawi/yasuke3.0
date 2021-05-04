@@ -1,0 +1,268 @@
+@font-face {
+    font-family: Gotham-Black sans-serif;
+    src: url(/gotham-font/GothamBold.ttf);
+  }
+  
+  *,
+  *::before,
+  *::after{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+  }
+  
+  body {
+    font-family: Gotham-Black, sans-serif;
+    background-color: #242323;
+  }
+  
+  
+  nav {
+    background: rgba(0, 0, 0, 0.1);
+    background-image: url(/css/img/image10.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 18px 20px;
+  }
+  
+  ul{
+    list-style-type: none;
+  }
+  
+  a{
+    color: red;
+    text-decoration: none;
+    border-radius: 2px;
+    padding: 3px;
+  }
+  
+  a:hover,
+  a.active{
+    background: rgb(255, 0, 0);
+    color: #f6f4fa;
+    border-width: auto;
+  }
+  
+  .menu li{
+   font-size: 16px;
+   padding: 15px 5px;
+  }
+  
+  .menu li a{
+    display: block;
+  }
+  
+  .logo a{
+    font-weight: 780;
+    text-decoration: none;
+    font-size: 3em;
+    text-transform: uppercase;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0008);
+    line-height: 0.70em;
+  }
+  
+  .item.toggle-btn{
+    border-bottom: 1px #ff0000;
+  }
+  
+  /* Mobile Menu */
+  
+  .menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  
+  .toggle{
+    order: 1;
+  }
+  
+  .item.toggle-btn{
+    order: 2;
+  }
+  
+  .item{
+    width: 100%;
+    text-align: center;
+    order: 3;
+    display: none;
+  }
+  
+  .item.actives{
+    display: block;
+  }
+  
+  /* Tablet menu */
+  @media all and (min-width: 468px){
+    .menu{
+      justify-content: center;
+    }
+    .logo{
+      flex:1;
+    }
+    .item.toggle-btn{
+      width: auto;
+      order: 1;
+      display: block;
+    }
+  
+    .toggle{
+      order:2;
+    }
+  
+    .toggle-btn a{
+      text-decoration: none;
+      padding: 7px 15px;
+      background: rgba(202, 71, 99, 0.158);
+      border: 1px solid #e92243;
+      border-radius: 4px;
+      background: transparent;
+    }
+  
+    .toggle-btn a:hover{
+      transition: all .25s;
+    }
+  
+  }
+  
+  @media all and (min-width: 768px){
+    .item{
+      display: block;
+      width: auto;
+    }
+    .toggle{
+    display: none;
+    }
+    .logo{
+      order: 0;
+    }
+    .item{
+      order: 1;
+    }
+    .toggle-btn{
+      order: 2;
+    }
+  
+    .menu li{
+      padding: 15px 10px;
+    }
+  
+    .menu li.toggle-btn{
+      padding-right: 0;
+    }
+  }
+  
+  
+  .toggle{
+  cursor: pointer;
+  }
+  
+  .bars{
+    background: crimson;
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    width: 18px;
+  }
+  
+  .bars::before, .bars::after{
+    background: crimson;
+    content: '';
+    display: inline-block;
+    height: 2px;
+    position: absolute;
+    width: 18px;
+  }
+  
+  .bars::before{
+    top:5px;
+  }
+  
+  .bars::after{
+    top:-5px;
+  }
+  
+  
+  section{
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      padding: 50px;
+      display: flex;
+      justify-content:center;
+      align-items: center;
+  }
+  
+  
+  #text{
+      position: absolute;
+      color: #fff;
+      white-space:nowrap;
+      font-size: 7.5vw;
+      z-index: 9;
+      
+  }
+  
+  .btn{
+     text-decoration: none;
+     position:absolute;
+     bottom: 31%;
+     padding: 8px 30px;
+     border-radius: 10px;
+     background: #fff;
+     color: #2b1055;
+     font-size: 1.5em;
+     transform: translateY(100px);
+  }
+   header ul li a:hover, 
+   header ul li a.active{
+       background: rgb(255, 0, 0);
+       color: #f6f4fa;
+   }
+  
+   .active ion-icon{
+    vertical-align: bottom;
+    font-size: 20px;
+    padding-right: 5px;
+   }
+  
+    .container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    padding-bottom: 100px;
+    cursor: pointer;
+    }
+  
+  
+     .image1, .image2, .image3 {
+      margin-right: 20px;
+      margin-left: 20px;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .add-cart {
+      position: absolute;
+      width: 100%;
+      background-color: rgb(0, 0, 0);
+      transition: all 0.3s ease-in-out;
+      cursor: pointer;
+      text-align: center;
+      opacity: 0;
+    }
+  
+  .image1:hover .cart1,
+  .image2:hover .cart2,
+  .image3:hover .cart3{
+    bottom: 50px;
+    opacity: 90%;
+    padding: 10px;
+    text-decoration: none;
+  }
+  
+ 

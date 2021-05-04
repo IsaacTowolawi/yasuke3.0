@@ -1,0 +1,412 @@
+
+body {
+    font-family: Gotham-Black, sans-serif;
+   background-image: url(img/yasuke7.png);
+   background-size: contain;
+  }
+
+  header ul li a:hover, 
+  header ul li a.active{
+      background: rgb(255, 0, 0);
+      color: #f6f4fa;
+  }
+
+  h1{
+      font-size: 3rem;
+      text-align: center;
+      margin: 75px auto;
+  }
+
+  .yasuke{
+      width: 90%;
+      margin: auto;
+      display: flex;
+      justify-content: space-around;
+
+  }
+
+  .img1, .img2, .img3{
+      width: 250px;
+      height: 350px;
+      background-size: cover;
+      position: relative;
+      overflow: hidden;
+}
+
+.img1{
+    background-image: url(/img/yasuke2.jpg);
+}
+
+.img2{
+    background-image: url(/img/yasukeimg3.jpg);
+}
+
+.img3{
+    background-image: url(/img/yasukeimg4.jpg);
+}
+
+.img1::after, .img2::after, .img3::after {
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    background-size: cover;
+    content: "";
+    position: absolute;
+    filter: grayscale(100%);
+    transition: 0.4s all;
+}
+
+.img1::after{
+    background-image: url(img/yasuke2.jpg);
+    object-fit: contain;
+}
+.img2::after{
+    background-image: url(img/yasukeimg3.jpg);
+    object-fit: contain;
+}
+.img3::after{
+    background-image: url(img/yasukeimg4.jpg);
+    object-fit: contain;
+}
+
+.yasuke > div:hover::after{
+    opacity: 0;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+section::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    background: linear-gradient(to top, #1c0522,transparent  );
+    z-index: 1000;
+}
+
+section img{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    width: 100%;
+    height: 170%;
+    object-fit:fill;
+    background-position: top center;
+    background-size: cover;
+    color: black;
+    opacity: 0.2;
+    pointer-events: none;
+}
+
+
+#text{
+    position: absolute;
+    color: #fff;
+    white-space:nowrap;
+    font-size: 7.5vw;
+    z-index: 9;
+    
+}
+
+.btn{
+   text-decoration: none;
+   position:absolute;
+   bottom: 31%;
+   padding: 8px 30px;
+   border-radius: 10px;
+   background: #fff;
+   color: #2b1055;
+   font-size: 1.5em;
+   transform: translateY(100px);
+}
+
+.samurai {
+   position: relative;
+   padding: 100px;
+   background: #1c0522;
+}
+
+.samurai h2{
+   font-size: 3.5em;
+   margin-bottom: 10px;
+   color: #fff;
+}
+
+.samurai p{
+   font-size: 1.5em;
+   color: #fff;
+}
+
+
+.iframe-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.iframe-container iframe{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  z-index: 9;
+}
+
+/* Tablet menu */
+
+@media (max-width: 768px){
+    .samurai {
+       position: relative;
+       padding: 50px;
+       background: #1c0522;
+    }
+   
+    .samurai h2{
+       font-size: 2.5em;
+       margin-bottom: 5px;
+       color: #fff;
+    }
+ 
+    .samurai p{
+       font-size: 1em;
+       color: #fff;
+    }
+ 
+    .iframe-container{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       
+     }
+     
+     .iframe-container iframe{
+       display: flex;
+       align-items: center;
+       flex-direction: column;
+       z-index: 9;
+       max-width: 660px;
+       max-height: 415px;
+     }
+   
+    .btn{
+       text-decoration: none;
+       position:absolute;
+       bottom: 31%;
+       padding: 4px 15px;
+       border-radius: 5px;
+       background: #fff;
+       color: #2b1055;
+       font-size: 1.7em;
+       transform: translateY(100px);
+    }
+
+    
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 10px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+section::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    background: linear-gradient(to top, #1c0522,transparent  );
+    z-index: 1000;
+}
+
+section img{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    width: 100%;
+    height: 170%;
+    object-fit:fill;
+    background-position: top center;
+    background-size: cover;
+    color: black;
+    opacity: 0.2;
+    pointer-events: none;
+}
+
+    h1{
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 55px auto;
+    }
+  
+    .yasuke{
+        width: 90%;
+        margin: 800px;
+        display: flex;
+        justify-content: space-around;
+  
+    }
+  
+    .img1, .img2, .img3{
+        width: 500px;
+        height: 500px;
+        background-size:contain;
+        position: relative;
+        overflow: hidden;
+  }
+  
+  .img1::after, .img2::after, .img3::after {
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    content: "";
+    position: absolute;
+    filter: grayscale(100%);
+    transition: 0.4s all;
+}
+  
+  }
+
+  /* Tablet Mode */
+ 
+ @media (max-width: 468px){
+    .samurai {
+       position: relative;
+       padding: 20px;
+       background: #1c0522;
+    }
+   
+    .samurai h2{
+       font-size: 1.5em;
+       margin-bottom: 5px;
+       color: #fff;
+    }
+    
+    .samurai p{
+       font-size: 1em;
+       color: #fff;
+    }
+ 
+    
+    .iframe-container{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       
+     }
+     
+     .iframe-container iframe{
+       display: flex;
+       align-items: center;
+       flex-direction: column;
+       z-index: 9;
+       max-width: 280px;
+       max-height: 157.5px;
+       
+     }
+ 
+    .btn{
+       text-decoration: none;
+       position:absolute;
+       bottom: 31%;
+       padding: 4px 15px;
+       border-radius: 5px;
+       background: #fff;
+       color: #2b1055;
+       font-size: 0.7em;
+       transform: translateY(20px);
+    }
+    section{
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        padding: 10px;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+    }
+    
+    section::before{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 80px;
+        background: linear-gradient(to top, #1c0522,transparent  );
+        z-index: 1000;
+    }
+    
+    section img{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        bottom: 0px;
+        right: 0px;
+        width: 100%;
+        height: 170%;
+        object-fit:fill;
+        background-position: top center;
+        background-size: cover;
+        color: black;
+        opacity: 0.2;
+        pointer-events: none;
+    }
+    
+        h1{
+            font-size: 1.5rem;
+            text-align: center;
+            margin: 55px auto;
+        }
+      
+        .yasuke{
+            width: 90%;
+            margin: 800px;
+            display: flex;
+            justify-content: space-around;
+      
+        }
+      
+        .img1, .img2, .img3{
+            width: 200px;
+            height: 200px;
+            background-size:contain;
+            position: relative;
+            overflow: hidden;
+      }
+      
+      .img1::after, .img2::after, .img3::after {
+        height: 100%;
+        width: 100%;
+        opacity: 1;
+        content: "";
+        position: absolute;
+        filter: grayscale(100%);
+        transition: 0.4s all;
+    }
+      
+      
+  }
+ 
+  
+ 
+
+
+
+
+  
+
+  

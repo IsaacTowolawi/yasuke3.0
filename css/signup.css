@@ -1,0 +1,175 @@
+body{
+    background-image: url(img/yasukeimg6.png);
+    background-size: cover;
+    opacity:inherit;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ header ul li a:hover, 
+ header ul li a.active{
+     background: rgb(255, 0, 0);
+     color: #f6f4fa;
+ }
+
+
+ nav ul .wrapper{
+     max-width: 350px;
+     border-radius: 20px;
+     margin: auto;
+     padding: 40px;
+ }
+
+ form{
+     display: flex;
+     flex-direction: column;
+ }
+
+ .wrapper{
+    max-width: 750px;
+     width: 490px;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     position: absolute;
+     color: rgb(0, 0, 0);
+     background: rgba(0, 0, 0, 0.7);
+     box-shadow: 0 5px 15px rgba (0, 0, 0, 0.5);
+     border-radius: 7px;
+ }
+
+ .wrapper h2{
+     font-size: 35px;
+     font-weight: bold;
+     text-align: center;
+     color: #fff;
+ }
+
+ .wrapper .name{
+     font-size: 25px;
+     font-weight: bold;
+     color: #fff;
+ }
+ .wrapper .password{
+     font-size: 25px;
+     font-weight: bold;
+     color: #fff;
+ }
+
+ .wrapper input{
+     font-size: 16px;
+     width: 70%;
+     padding: 15px 10px;
+     border: 0;
+     outline: none;
+     border-radius: 5px;
+     text-align: center;
+     text-transform: uppercase;
+     margin: 15px 0;
+ }
+
+ .wrapper button{
+     font-size: 18px;
+     font-weight: bold;
+     margin: 20px 0;
+     padding: 10px 15px;
+     width: 30%;
+     border-radius: 5px;
+     text-align: center;
+ }
+
+ .wrapper .submit{
+     position: relative;
+     text-align: center;
+
+ }
+
+.wrapper #error{
+     font-size: 14px;
+     font-weight: bold;
+     text-transform: uppercase;
+     color: #fff;
+ }
+
+ /* Tablet menu */
+ 
+
+ @media (max-width: 400px){
+    nav ul .wrapper{
+        max-width: 350px;
+        border-radius: 20px;
+        margin: auto;
+        padding: 40px;
+    }
+   
+    form{
+        display: flex;
+        flex-direction: column;
+    }
+   
+    .wrapper{
+       max-width: 750px;
+        width: 300px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        color: rgb(0, 0, 0);
+        background: rgba(0, 0, 0, 0.7);
+        box-shadow: 0 5px 15px rgba (0, 0, 0, 0.5);
+        border-radius: 7px;
+    }
+   
+    .wrapper h2{
+        font-size: 17px;
+        font-weight: bold;
+        text-align: center;
+        color: #fff;
+    }
+   
+    .wrapper .name{
+        font-size: 17px;
+        font-weight:normal;
+        color: #fff;
+    }
+    .wrapper .password{
+        font-size: 16px;
+        font-weight: normal;
+        color: #fff;
+    }
+   
+    .wrapper input{
+        font-size: 8px;
+        width: 70%;
+        padding: 15px 10px;
+        border: 0;
+        outline: none;
+        border-radius: 5px;
+        text-align: center;
+        margin: 4px 0;
+    }
+   
+    .wrapper button{
+        font-size: 9px;
+        font-weight: normal;
+        margin: 1px 0;
+        padding: 5px 12px;
+        width: 20%;
+        border-radius: 5px;
+        text-align: center;
+    }
+   
+    .wrapper .submit{
+        position: relative;
+        text-align: center;
+   
+    }
+   
+   .wrapper #error{
+        font-size: 7px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #fff;
+    }
+}   
+
